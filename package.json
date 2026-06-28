@@ -1,0 +1,23 @@
+{
+  "name": "projeto-salao",
+  "version": "1.0.0",
+  "description": "Sistema SaaS para gestão de salões de beleza",
+  "author": {
+    "name": "Zenaldo Pereira",
+    "email": "https://github.com/zenaldo-oliveira"
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently --kill-others --raw \"npm run dev --prefix apps/web\"",
+    "build": "concurrently --raw \"npm run build --prefix apps/web\"",
+    "start": "concurrently --kill-others --raw",
+    "lint": "concurrently --raw \"npm run lint --prefix apps/web\""
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  },
+  "workspaces": [
+    "apps/*"
+  ]
+}

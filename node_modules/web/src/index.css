@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Luxury Palette 
+       Rose Gold: #B76E79 -> 351 34% 60%
+       Gold: #D4AF37 -> 46 65% 52%
+       Nude: #F5E6D3 -> 33 55% 89% 
+    */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 15%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
+    
+    --primary: 351 34% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 46 65% 52%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: 33 55% 89%;
+    --accent-foreground: 0 0% 25%;
+    
+    --muted: 30 20% 96%;
+    --muted-foreground: 0 0% 45%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 30 20% 90%;
+    --input: 30 20% 90%;
+    --ring: 351 34% 60%;
+    
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 95%;
+    
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
+    
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
+    
+    --primary: 351 34% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 46 65% 52%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: 30 20% 20%;
+    --accent-foreground: 0 0% 95%;
+    
+    --muted: 30 10% 15%;
+    --muted-foreground: 0 0% 65%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 30 10% 20%;
+    --input: 30 10% 20%;
+    --ring: 351 34% 60%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: clip;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.625;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    @apply text-balance;
+  }
+
+  p {
+    @apply max-w-[65ch];
+  }
+}
+
+@layer utilities {
+  .glass-effect {
+    @apply bg-white/60 backdrop-blur-xl border border-white/40 shadow-sm;
+  }
+
+  .dark .glass-effect {
+    @apply bg-black/40 backdrop-blur-xl border border-white/10 shadow-sm;
+  }
+}
