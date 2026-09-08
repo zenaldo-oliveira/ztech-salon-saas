@@ -1,29 +1,40 @@
-# ZTech Salon SaaS
+# ZTech Salon
 
-Sistema SaaS para gestão de salões de beleza, barbearias e clínicas de estética.
+Site institucional moderno para salões de beleza, barbearias e clínicas de estética.
 
 ## Sobre o Projeto
 
-O ZTech Salon SaaS foi desenvolvido para auxiliar empresas do segmento de beleza no gerenciamento de clientes, agendamentos, serviços e indicadores de desempenho através de uma interface moderna e intuitiva.
+O **ZTech Salon** é um projeto de site institucional desenvolvido pela ZTech Solutions para empresas do segmento de beleza.
+
+O objetivo é oferecer uma presença digital moderna e profissional, apresentando a empresa, seus serviços e informações de contato, além de facilitar a captação de novos clientes.
+
+O projeto foi desenvolvido com foco em:
+
+- experiência do usuário;
+- design moderno;
+- responsividade;
+- apresentação dos serviços;
+- presença digital;
+- geração de contatos e oportunidades.
 
 ## Funcionalidades
 
-* Dashboard gerencial
-* Cadastro de clientes
-* Gestão de profissionais
-* Controle de agendamentos
-* Histórico de atendimentos
-* Relatórios e métricas
-* Interface responsiva
-* Multiusuário
+- Página inicial institucional
+- Apresentação da empresa
+- Apresentação de serviços
+- Seções comerciais
+- Formulário de contato
+- Links para redes sociais
+- Design responsivo
+- Layout moderno
+- Otimização para dispositivos móveis
 
 ## Tecnologias
 
-* React
-* Vite
-* JavaScript
-* Tailwind CSS
-* Node.js
+- React
+- Vite
+- JavaScript
+- Tailwind CSS
 
 ## Instalação
 
@@ -31,51 +42,3 @@ Clone o repositório:
 
 ```bash
 git clone https://github.com/zenaldo-oliveira/ztech-salon-saas.git
-```
-
-Instale as dependências:
-
-```bash
-npm install
-```
-
-Execute o projeto:
-
-```bash
-npm run dev
-```
-
-Acesse:
-
-```text
-http://localhost:3000
-```
-
-## Estrutura do Projeto
-
-```text
-apps/
-└── web/
-    ├── src/
-    ├── public/
-    ├── package.json
-    └── vite.config.js
-```
-
-## Roadmap
-
-* Integração com WhatsApp
-* Controle financeiro
-* Gestão de assinaturas
-* Multiempresa
-* Aplicativo mobile
-
-## Autor
-
-Zenaldo Pereira
-
-Desenvolvido por ZTech Solutions.
-
-## Licença
-
-MIT License
